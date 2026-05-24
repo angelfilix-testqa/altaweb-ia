@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2">
+  <title>Altaweb.ia · Órbita</title>
+  <ellipse cx="100" cy="100" rx="85" ry="35" opacity="0.4" stroke-dasharray="3 4"></ellipse>
+  <ellipse cx="100" cy="100" rx="60" ry="80" transform="rotate(30 100 100)" opacity="0.4" stroke-dasharray="3 4"></ellipse>
+  <ellipse cx="100" cy="100" rx="60" ry="80" transform="rotate(-30 100 100)" opacity="0.4" stroke-dasharray="3 4"></ellipse>
+  <path d="M 100 60 L 140 140 L 60 140 Z" stroke-width="2.5"></path>
+  <path d="M 100 88 L 124 134 L 76 134 Z" fill="#7C3AED" stroke="none"></path>
+  <circle cx="185" cy="100" r="5" fill="#D946EF" stroke="none"></circle>
+  <circle cx="142" cy="32" r="4" fill="#22D3EE" stroke="none"></circle>
+</svg>

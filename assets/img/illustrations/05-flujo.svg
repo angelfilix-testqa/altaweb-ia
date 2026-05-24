@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5">
+  <title>Altaweb.ia · Flujo</title>
+  <circle cx="35" cy="100" r="14"></circle>
+  <circle cx="100" cy="50" r="14"></circle>
+  <circle cx="100" cy="150" r="14"></circle>
+  <circle cx="165" cy="100" r="14" fill="#7C3AED" stroke="none"></circle>
+  <path d="M 165 92 L 173 110 L 157 110 Z" fill="#F6F4FF" stroke="none"></path>
+  <g stroke-width="2" opacity="0.7">
+    <line x1="49" y1="100" x2="86" y2="56"></line>
+    <line x1="49" y1="100" x2="86" y2="144"></line>
+    <line x1="114" y1="50" x2="151" y2="92"></line>
+    <line x1="114" y1="150" x2="151" y2="108"></line>
+  </g>
+  <path d="M 175 95 L 188 100 L 175 105"></path>
+</svg>

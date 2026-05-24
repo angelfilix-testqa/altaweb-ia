@@ -1,0 +1,47 @@
+# ── WordPress ───────────────────────────────────────────────
+# Credenciales — NUNCA subir al repo
+wp-config.php
+
+# Archivos de WP que se reinstalan desde wordpress.org
+wp-admin/
+wp-includes/
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
+index.php
+
+# Uploads (imágenes subidas por el usuario — van por FTP/CDN)
+wp-content/uploads/
+
+# Cache y archivos generados
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/debug.log
+
+# ── Tema ────────────────────────────────────────────────────
+# Archivos compilados (si usáramos build tools)
+wp-content/themes/altaweb-ia/node_modules/
+wp-content/themes/altaweb-ia/.cache/
+
+# ── Sistema operativo ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editores ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+error_log
+
+# ── Local by Flywheel ────────────────────────────────────────
+.local/
+
+# ── Claude Code ──────────────────────────────────────────────
+.claude/

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5" stroke-linecap="round">
+  <title>Altaweb.ia · Aprendizaje</title>
+  <path d="M 100 100 m -10 0 a 10 10 0 1 1 20 0 a 18 18 0 1 1 -36 0 a 28 28 0 1 1 56 0 a 38 38 0 1 1 -76 0 a 50 50 0 1 1 100 0"></path>
+  <circle cx="100" cy="100" r="3" fill="#D946EF" stroke="none"></circle>
+  <path d="M 150 100 L 165 92 M 150 100 L 165 108"></path>
+</svg>

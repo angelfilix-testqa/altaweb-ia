@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5" stroke-linejoin="miter">
+  <title>Altaweb.ia · Crecimiento</title>
+  <path d="M 40 180 L 70 130 L 100 180 Z"></path>
+  <path d="M 80 180 L 110 100 L 140 180 Z"></path>
+  <path d="M 120 180 L 150 70 L 180 180 Z"></path>
+  <path d="M 70 130 L 100 80 L 100 100" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.5"></path>
+  <circle cx="150" cy="70" r="4" fill="#D946EF" stroke="none"></circle>
+  <path d="M 20 185 L 190 185" stroke-width="1.5" opacity="0.35"></path>
+</svg>

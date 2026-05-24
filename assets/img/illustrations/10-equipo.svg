@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5" stroke-linejoin="miter">
+  <title>Altaweb.ia · Equipo</title>
+  <path d="M 50 180 L 80 100 L 110 180 Z" opacity="0.45"></path>
+  <path d="M 110 180 L 140 100 L 170 180 Z" opacity="0.45"></path>
+  <path d="M 70 180 L 100 80 L 130 180 Z" fill="#7C3AED" stroke="none"></path>
+  <circle cx="80" cy="92" r="10" fill="#0A0118"></circle>
+  <circle cx="140" cy="92" r="10" fill="#0A0118"></circle>
+  <circle cx="100" cy="72" r="12" fill="#D946EF" stroke="none"></circle>
+  <line x1="20" y1="190" x2="180" y2="190" stroke-width="1.5" opacity="0.4"></line>
+</svg>

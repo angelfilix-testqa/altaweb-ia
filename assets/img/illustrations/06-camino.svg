@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5">
+  <title>Altaweb.ia · Camino</title>
+  <path d="M 20 165 Q 60 165, 70 130 T 105 95 T 145 60 T 180 30" stroke-linecap="round"></path>
+  <path d="M 20 165 Q 60 165, 70 130 T 105 95 T 145 60 T 180 30" opacity="0.25" stroke-dasharray="2 6" stroke-width="6"></path>
+  <circle cx="20" cy="165" r="6" fill="#0A0118" stroke="none"></circle>
+  <circle cx="70" cy="130" r="6" fill="#0A0118" stroke="none"></circle>
+  <circle cx="105" cy="95" r="6" fill="#22D3EE" stroke="none"></circle>
+  <circle cx="145" cy="60" r="6" fill="#0A0118" stroke="none"></circle>
+  <path d="M 180 30 L 200 38 L 180 46 Z" fill="#D946EF" stroke="none"></path>
+  <line x1="180" y1="30" x2="180" y2="55"></line>
+</svg>

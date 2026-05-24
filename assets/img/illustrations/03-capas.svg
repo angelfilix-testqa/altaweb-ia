@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5" stroke-linejoin="miter">
+  <title>Altaweb.ia · Capas</title>
+  <path d="M 100 30 L 175 70 L 100 110 L 25 70 Z"></path>
+  <path d="M 100 75 L 175 115 L 100 155 L 25 115 Z" opacity="0.7"></path>
+  <path d="M 100 120 L 175 160 L 100 200 L 25 160 Z" opacity="0.4" fill="#7C3AED" stroke="none"></path>
+  <circle cx="100" cy="30" r="4" fill="#D946EF" stroke="none"></circle>
+</svg>

@@ -1,0 +1,77 @@
+/* ============================================================
+   ALTAWEB.IA · PATTERNS · v1.0
+   6 background patterns · CSS-only · copy and paste
+   Tokens used: --aw-primary, --aw-ink, --aw-paper, etc.
+   See altaweb-tokens.css for full token list.
+   ============================================================ */
+
+/* 01 · Triangle weave — diagonal triangle texture */
+.aw-pattern-triangles {
+  background-color: #0A0118;
+  background-image:
+    linear-gradient(60deg, rgba(167, 139, 250, 0.15) 0%, transparent 50%),
+    linear-gradient(-60deg, rgba(167, 139, 250, 0.15) 0%, transparent 50%);
+  background-size: 40px 70px;
+}
+
+/* 02 · IA dot grid — small dots on light bg */
+.aw-pattern-dot-grid {
+  background-color: #F6F4FF;
+  background-image: radial-gradient(circle at 1px 1px, #7C3AED 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* 03 · Diagonal stripes */
+.aw-pattern-stripes {
+  background-color: #0A0118;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #150528 0px,
+    #150528 18px,
+    #4C1D95 18px,
+    #4C1D95 19px,
+    #150528 19px,
+    #150528 36px
+  );
+}
+
+/* 04 · Neon mesh — gradient blobs (hero / cover) */
+.aw-pattern-mesh {
+  background-color: #0A0118;
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(124, 58, 237, 0.7) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(217, 70, 239, 0.55) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(34, 211, 238, 0.3) 0%, transparent 60%);
+}
+
+/* 05 · Scanlines — CRT / terminal aesthetic */
+.aw-pattern-scanlines {
+  background-color: #0A0118;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 3px,
+    rgba(167, 139, 250, 0.25) 3px,
+    rgba(167, 139, 250, 0.25) 4px
+  );
+}
+
+/* 06 · Orbit waves — concentric rings (radial repeats) */
+.aw-pattern-orbit {
+  background-color: #0A0118;
+  background-image: radial-gradient(
+    circle at center,
+    transparent 24px,
+    rgba(167, 139, 250, 0.4) 25px,
+    transparent 26px,
+    transparent 48px,
+    rgba(167, 139, 250, 0.35) 49px,
+    transparent 50px,
+    transparent 72px,
+    rgba(167, 139, 250, 0.3) 73px,
+    transparent 74px,
+    transparent 96px,
+    rgba(167, 139, 250, 0.25) 97px,
+    transparent 98px
+  );
+}

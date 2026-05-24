@@ -1,0 +1,100 @@
+/* ============================================================
+   ALTAWEB.IA · DESIGN TOKENS
+   Versión 1.0 · 2026
+   ============================================================ */
+
+:root {
+  /* -------- Color · Ink (neutro oscuro) -------- */
+  --aw-ink-950: #0A0118;
+  --aw-ink-900: #150528;
+  --aw-ink-800: #221140;
+
+  /* -------- Color · Paper (neutro claro) -------- */
+  --aw-paper-50:  #F6F4FF;
+  --aw-paper-100: #ECE7FF;
+  --aw-paper-200: #DCD3FF;
+
+  /* -------- Color · Violet (primario) -------- */
+  --aw-violet-100: #ECE7FF;
+  --aw-violet-200: #DDD6FE;
+  --aw-violet-300: #C4B5FD;
+  --aw-violet-400: #A78BFA;
+  --aw-violet-500: #7C3AED; /* ★ PRIMARIO */
+  --aw-violet-600: #6D28D9;
+  --aw-violet-700: #4C1D95;
+  --aw-violet-800: #2E0F6E;
+  --aw-violet-900: #1E0B47;
+
+  /* -------- Color · Acentos -------- */
+  --aw-magenta: #D946EF;
+  --aw-cyber:   #22D3EE;
+
+  /* -------- Semánticos -------- */
+  --aw-primary:    var(--aw-violet-500);
+  --aw-bg:         var(--aw-paper-50);
+  --aw-bg-dark:    var(--aw-ink-950);
+  --aw-fg:         var(--aw-ink-950);
+  --aw-fg-on-dark: var(--aw-paper-50);
+  --aw-accent:     var(--aw-magenta);
+  --aw-data:       var(--aw-cyber);
+
+  /* -------- Tipografía -------- */
+  --aw-font-display: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --aw-font-body:    "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --aw-font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* -------- Pesos -------- */
+  --aw-weight-light:    300;
+  --aw-weight-regular:  400;
+  --aw-weight-medium:   500;
+  --aw-weight-semibold: 600;
+  --aw-weight-bold:     700;
+
+  /* -------- Escala tipográfica -------- */
+  --aw-text-xs:   0.75rem;   /* 12px */
+  --aw-text-sm:   0.875rem;  /* 14px */
+  --aw-text-base: 1rem;      /* 16px */
+  --aw-text-lg:   1.125rem;  /* 18px */
+  --aw-text-xl:   1.375rem;  /* 22px */
+  --aw-text-2xl:  1.75rem;   /* 28px */
+  --aw-text-3xl:  2.25rem;   /* 36px */
+  --aw-text-4xl:  3rem;      /* 48px */
+  --aw-text-5xl:  4.5rem;    /* 72px */
+  --aw-text-6xl:  6rem;      /* 96px */
+  --aw-text-hero: clamp(3rem, 8vw, 8.75rem); /* fluido */
+
+  /* -------- Espaciado (grid de 8) -------- */
+  --aw-space-1:  0.25rem;  /* 4px */
+  --aw-space-2:  0.5rem;   /* 8px */
+  --aw-space-3:  1rem;     /* 16px */
+  --aw-space-4:  1.5rem;   /* 24px */
+  --aw-space-5:  2rem;     /* 32px */
+  --aw-space-6:  3rem;     /* 48px */
+  --aw-space-7:  4rem;     /* 64px */
+  --aw-space-8:  6rem;     /* 96px */
+  --aw-space-9:  7.5rem;   /* 120px */
+
+  /* -------- Radios -------- */
+  --aw-radius-sm:   0.5rem;    /* 8px */
+  --aw-radius-md:   0.875rem;  /* 14px */
+  --aw-radius-lg:   1.25rem;   /* 20px */
+  --aw-radius-xl:   1.5rem;    /* 24px */
+  --aw-radius-2xl:  2rem;      /* 32px */
+  --aw-radius-full: 999px;
+
+  /* -------- Tracking -------- */
+  --aw-tracking-tight:  -0.045em;
+  --aw-tracking-normal:  0;
+  --aw-tracking-wide:    0.08em;
+  --aw-tracking-wider:   0.18em;
+
+  /* -------- Sombras -------- */
+  --aw-shadow-sm:  0 1px 3px rgba(10,1,24,0.12);
+  --aw-shadow-md:  0 4px 16px rgba(10,1,24,0.16);
+  --aw-shadow-lg:  0 12px 40px rgba(10,1,24,0.20);
+  --aw-shadow-violet: 0 8px 32px rgba(124,58,237,0.35);
+
+  /* -------- Transiciones -------- */
+  --aw-ease:      cubic-bezier(0.16, 1, 0.3, 1);
+  --aw-duration:  240ms;
+}

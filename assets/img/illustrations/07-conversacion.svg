@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none" stroke="#0A0118" stroke-width="2.5" stroke-linejoin="miter">
+  <title>Altaweb.ia · Conversación</title>
+  <path d="M 80 28 L 175 28 L 175 80 L 150 80 L 140 95 L 130 80 L 80 80 Z" fill="#7C3AED" stroke="none"></path>
+  <path d="M 25 95 L 120 95 L 130 110 L 25 110 Z" opacity="0.15" fill="#0A0118" stroke="none"></path>
+  <path d="M 25 95 L 120 95 L 130 110 L 25 110 Z"></path>
+  <path d="M 25 130 L 100 130 L 110 145 L 25 145 Z"></path>
+  <path d="M 60 170 L 80 195 L 40 195 Z" fill="#D946EF" stroke="none"></path>
+</svg>
