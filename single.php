@@ -25,10 +25,6 @@
 						<p class="article-hero__intro"><?php the_excerpt(); ?></p>
 					<?php endif; ?>
 
-					<div class="article-hero__author">
-						<?php echo get_avatar( get_the_author_meta( 'ID' ), 40, '', '', [ 'class' => 'article-hero__avatar' ] ); ?>
-						<span><?php the_author(); ?></span>
-					</div>
 				</div>
 			</header>
 
