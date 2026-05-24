@@ -6,8 +6,8 @@
 	<section class="lab-hero section--dark aw-pattern-mesh">
 		<div class="container lab-hero__inner">
 			<span class="eyebrow">— Lab</span>
-			<h1 class="lab-hero__title">Ideas, casos y recursos<br>para el siguiente capítulo.</h1>
-			<p class="lab-hero__sub">Reflexiones sobre IA, diseño web y estrategia digital para equipos que quieren ir más rápido.</p>
+			<h1 class="lab-hero__title">Ideas, casos y recursos<br>para hacer crecer tu negocio.</h1>
+			<p class="lab-hero__sub">Todo lo que aprendemos haciendo proyectos reales. Sobre IA, diseño web y estrategia digital.</p>
 		</div>
 	</section>
 

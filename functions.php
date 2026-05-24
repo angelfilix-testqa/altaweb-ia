@@ -158,7 +158,7 @@ function aw_get_service_data( $slug ) {
 				[ 'step' => '03', 'title' => 'Diseñar',   'desc' => 'Sistema visual + prototipo de alta fidelidad. Dos rondas de revisión incluidas sin coste adicional.' ],
 				[ 'step' => '04', 'title' => 'Entregar',  'desc' => 'Handoff en Figma con variables, tokens y toda la documentación para que el desarrollo vuele.' ],
 			],
-			'for_whom'   => 'Empresas que quieren rediseñar su web sin adivinar qué cambia, startups lanzando un producto nuevo y equipos que necesitan un sistema de diseño para escalar sin chaos.',
+			'for_whom'   => 'Empresas que quieren rediseñar su web con criterio y datos reales, startups lanzando su primer producto y equipos que necesitan un sistema de diseño para crecer sin caos.',
 			'tags'       => [ 'Figma', 'Design Systems', 'UX Research', 'Prototipos', 'Handoff' ],
 		],
 		'desarrollo-a-medida' => [
@@ -222,7 +222,7 @@ function aw_get_service_data( $slug ) {
 				[ 'step' => '03', 'title' => 'Construir',  'desc' => 'Desarrollo e integración completa con tus sistemas. Incluye tests de seguridad y rendimiento.' ],
 				[ 'step' => '04', 'title' => 'Escalar',    'desc' => 'Monitorización, ajuste del modelo y expansión a nuevos casos de uso según los datos del primer despliegue.' ],
 			],
-			'for_whom'   => 'Empresas con procesos repetitivos que consumen tiempo de talento valioso, equipos de contenido que necesitan producir más sin sacrificar calidad y negocios que quieren dar a sus clientes una experiencia más inteligente.',
+			'for_whom'   => 'Empresas con tareas manuales que roban horas al equipo, negocios que necesitan publicar más contenido sin contratar más gente, y empresas que quieren dar a sus clientes una atención más rápida y disponible siempre.',
 			'tags'       => [ 'OpenAI', 'Claude', 'LangChain', 'n8n', 'Make', 'RAG', 'Prompt Engineering' ],
 		],
 		'estrategia-digital' => [
@@ -261,7 +261,7 @@ function aw_get_service_data( $slug ) {
 			'num'        => '05',
 			'title'      => 'Social Media',
 			'tagline'    => 'Presencia constante. Contenido que conecta. Resultados medibles.',
-			'intro'      => 'Gestionamos tu estrategia de redes sociales con IA como copiloto. Calendarios editoriales, producción de contenido, gestión de comunidad y análisis de rendimiento — todo con la voz de tu marca, sin plantillas genéricas.',
+			'intro'      => 'Gestionamos tu estrategia de redes sociales con IA en el proceso: calendarios editoriales, producción de contenido, gestión de comunidad y análisis de resultados — todo con la voz de tu marca, sin plantillas de relleno.',
 			'illustration' => '07-conversacion.svg',
 			'stats'      => [
 				[ 'num' => '4 sem.',    'label' => 'Al primer post publicado' ],

@@ -17,7 +17,7 @@
 					que <em>piensan</em> contigo.
 				</h1>
 				<p class="hero__sub">
-					Diseñamos, construimos y entrenamos experiencias web e interfaces conversacionales para equipos que ya viven en el siguiente capítulo.
+					Diseñamos, construimos e integramos IA para negocios que quieren crecer más rápido de lo que su competencia espera.
 				</p>
 				<div class="hero__actions">
 					<a href="#servicios" class="btn btn--primary">Ver servicios <span aria-hidden="true">↓</span></a>
@@ -83,7 +83,7 @@
 			<div class="services-bento__header">
 				<span class="svc-eyebrow">Lo que hacemos</span>
 				<h2 class="services-bento__title" id="services-title">
-					Servicios diseñados<br>para el nuevo ritmo digital.
+					Cinco servicios.<br>Un equipo que los ejecuta todos.
 				</h2>
 			</div>
 
@@ -191,7 +191,7 @@
 		<div class="container">
 			<div class="section__header section__header--light">
 				<span class="eyebrow">— Cómo trabajamos</span>
-				<h2 class="section__title" id="process-title">Metodología ágil,<br>resultado predecible.</h2>
+				<h2 class="section__title" id="process-title">Cuatro pasos.<br>Sin vueltas. Sin sorpresas.</h2>
 			</div>
 
 			<ol class="process__steps">
@@ -288,8 +288,8 @@
 	<section class="section cta-band section--violet" aria-labelledby="cta-title">
 		<div class="container cta-band__inner">
 			<div>
-				<h2 class="cta-band__title" id="cta-title">¿Tienes un proyecto en mente?</h2>
-				<p class="cta-band__sub">Cuéntanos de qué va y te respondemos en menos de 24 h.</p>
+				<h2 class="cta-band__title" id="cta-title">¿Tienes algo en mente pero no sabes por dónde empezar?</h2>
+				<p class="cta-band__sub">Cuéntanos tu proyecto y te respondemos antes de que acabe el día.</p>
 			</div>
 			<a href="#contacto" class="btn btn--white">Empezar ahora →</a>
 		</div>
@@ -303,7 +303,7 @@
 
 			<div class="contact__info">
 				<span class="eyebrow">— Hablemos</span>
-				<h2 class="contact__title" id="contact-title">Un mensaje<br>cambia todo.</h2>
+				<h2 class="contact__title" id="contact-title">Cuéntanos.<br>Sin formularios eternos.</h2>
 				<p>Estamos disponibles para nuevos proyectos, colaboraciones y preguntas raras.</p>
 				<a href="mailto:hola@altaweb.ia" class="contact__email">hola@altaweb.ia</a>
 			</div>
