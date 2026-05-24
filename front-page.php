@@ -189,41 +189,65 @@
 	============================================================ -->
 	<section class="section process section--dark" id="proceso" aria-labelledby="process-title">
 		<div class="container">
-			<div class="section__header section__header--light">
-				<span class="eyebrow">— Cómo trabajamos</span>
-				<h2 class="section__title" id="process-title">Cuatro pasos.<br>Sin vueltas. Sin sorpresas.</h2>
-			</div>
+			<div class="process-prop">
+				<div class="process-prop__bg" aria-hidden="true"></div>
+				<div class="process-prop__glow" aria-hidden="true"></div>
+				<div class="process-prop__mark" aria-hidden="true">
+					<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="70" cy="70" r="66" fill="none" stroke="var(--aw-violet-500)" stroke-width="6"/>
+						<path d="M 70 30 L 110 100 L 30 100 Z" fill="none" stroke="var(--aw-violet-500)" stroke-width="8"/>
+						<path d="M 70 56 L 96 96 L 44 96 Z" fill="var(--aw-violet-500)"/>
+					</svg>
+				</div>
+				<div class="process-prop__inner">
+					<div class="process-prop__header">
+						<div class="process-prop__header-left">
+							<span class="process-prop__eyebrow">Cómo trabajamos</span>
+							<h2 class="process-prop__title" id="process-title">Cuatro pasos. <em>Sin vueltas.</em></h2>
+							<p class="process-prop__header-sub">De la idea al lanzamiento, con visibilidad total en cada etapa.</p>
+						</div>
+					</div>
 
-			<ol class="process__steps">
-				<li class="process__step">
-					<span class="process__num">01</span>
-					<div>
-						<h3 class="process__step-title">Descubrir</h3>
-						<p>Entendemos tu negocio, tus usuarios y tus objetivos. Una semana de investigación que ahorra meses de iteración.</p>
+					<ol class="process-prop__steps">
+						<li class="process-prop__step">
+							<div class="process-prop__num-wrap">
+								<span class="process-prop__num">01</span>
+							</div>
+							<h3 class="process-prop__step-title">Descubrir</h3>
+							<p class="process-prop__step-desc">Entendemos tu negocio, tus usuarios y tus objetivos. Una semana de investigación que ahorra meses de iteración.</p>
+							<div class="process-prop__time">≈ 1 semana</div>
+						</li>
+						<li class="process-prop__step">
+							<div class="process-prop__num-wrap">
+								<span class="process-prop__num">02</span>
+							</div>
+							<h3 class="process-prop__step-title">Diseñar</h3>
+							<p class="process-prop__step-desc">Wireframes, sistema de componentes y prototipo navegable antes de escribir una línea de código.</p>
+							<div class="process-prop__time">≈ 2 semanas</div>
+						</li>
+						<li class="process-prop__step">
+							<div class="process-prop__num-wrap">
+								<span class="process-prop__num">03</span>
+							</div>
+							<h3 class="process-prop__step-title">Construir</h3>
+							<p class="process-prop__step-desc">Sprints cortos, entregas frecuentes, demos cada semana. Ves el avance en tiempo real.</p>
+							<div class="process-prop__time">≈ 4–8 semanas</div>
+						</li>
+						<li class="process-prop__step">
+							<div class="process-prop__num-wrap">
+								<span class="process-prop__num">04</span>
+							</div>
+							<h3 class="process-prop__step-title">Lanzar &amp; escalar</h3>
+							<p class="process-prop__step-desc">Deploy, formación del equipo y soporte post-lanzamiento. No desaparecemos cuando se publica.</p>
+							<div class="process-prop__time">Continuo</div>
+						</li>
+					</ol>
+
+					<div class="process-prop__connector" aria-hidden="true">
+						<div class="process-prop__connector-fill"></div>
 					</div>
-				</li>
-				<li class="process__step">
-					<span class="process__num">02</span>
-					<div>
-						<h3 class="process__step-title">Diseñar</h3>
-						<p>Wireframes, sistema de componentes y prototipo navegable antes de escribir una línea de código.</p>
-					</div>
-				</li>
-				<li class="process__step">
-					<span class="process__num">03</span>
-					<div>
-						<h3 class="process__step-title">Construir</h3>
-						<p>Sprints cortos, entregas frecuentes, demos cada semana. Ves el avance en tiempo real.</p>
-					</div>
-				</li>
-				<li class="process__step">
-					<span class="process__num">04</span>
-					<div>
-						<h3 class="process__step-title">Lanzar & escalar</h3>
-						<p>Deploy, formación del equipo y soporte post-lanzamiento. No desaparecemos cuando se publica.</p>
-					</div>
-				</li>
-			</ol>
+				</div>
+			</div>
 		</div>
 	</section>
 

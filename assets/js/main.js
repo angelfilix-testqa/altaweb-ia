@@ -3,25 +3,53 @@
 (function () {
   'use strict';
 
-  // ── Menú mobile ─────────────────────────────────────────
-  const toggle = document.getElementById('nav-toggle');
-  const nav    = document.getElementById('site-nav');
+  // ── Menú mobile con slide-down + overlay ────────────────
+  const toggle  = document.getElementById('nav-toggle');
+  const nav     = document.getElementById('site-nav');
+  const overlay = document.createElement('div');
+  overlay.className = 'nav-overlay';
+  document.body.appendChild(overlay);
+
+  function openMenu() {
+    nav.classList.add('is-open');
+    overlay.classList.add('is-visible');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    nav.classList.remove('is-open');
+    overlay.classList.remove('is-visible');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
 
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      const isOpen = nav.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      nav.classList.contains('is-open') ? closeMenu() : openMenu();
     });
-
-    // Cerrar al hacer clic en un enlace
     nav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        nav.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', closeMenu);
     });
+    overlay.addEventListener('click', closeMenu);
+  }
+
+  // ── Nav activo con IntersectionObserver ──────────────────
+  var navLinks = document.querySelectorAll('.site-nav__list a');
+  var sections = document.querySelectorAll('main section[id]');
+
+  if (sections.length && navLinks.length) {
+    var activeObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        navLinks.forEach(function (link) {
+          var href = link.getAttribute('href') || '';
+          link.classList.toggle('is-active', href === '#' + id || href.endsWith('/#' + id) || href.endsWith('/' + id));
+        });
+      });
+    }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+    sections.forEach(function (s) { activeObserver.observe(s); });
   }
 
   // ── Header: añade clase al hacer scroll ─────────────────
@@ -69,7 +97,7 @@
 
   // Añade fade-in a elementos estándar y los observa
   document.querySelectorAll(
-    '.work-card, .process__step, .stat, .lab-card'
+    '.work-card, .process-prop__step, .stat, .lab-card'
   ).forEach(function (el) {
     el.classList.add('fade-in');
     observer.observe(el);
