@@ -44,10 +44,10 @@
 				<aside class="article-sidebar">
 					<div class="article-sidebar__sticky">
 						<div class="article-cta-box">
-							<span class="eyebrow">¿Tienes un proyecto?</span>
+							<span class="eyebrow">¿Lo que lees te hace pensar?</span>
 							<p>Cuéntanos de qué va y te respondemos en menos de 24&nbsp;h.</p>
 							<a href="<?php echo esc_url( home_url( '/#contacto' ) ); ?>" class="btn btn--primary btn--full">
-								Hablemos →
+								Cuéntanos tu caso →
 							</a>
 						</div>
 					</div>

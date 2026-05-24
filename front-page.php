@@ -56,15 +56,15 @@
 			<div class="hero__stats">
 				<div class="stat">
 					<span class="stat__num">+40</span>
-					<span class="stat__label">Proyectos entregados</span>
+					<span class="stat__label">Negocios que ya crecen con nosotros</span>
 				</div>
 				<div class="stat">
 					<span class="stat__num">100%</span>
-					<span class="stat__label">IA integrada en el proceso</span>
+					<span class="stat__label">IA nativa en cada proyecto — no es un extra</span>
 				</div>
 				<div class="stat">
 					<span class="stat__num">3×</span>
-					<span class="stat__label">Más rápido que una agencia tradicional</span>
+					<span class="stat__label">Más rápido de entrega que la media del sector</span>
 				</div>
 			</div>
 		</div>
@@ -110,7 +110,7 @@
 						<div class="bento-core__content">
 							<span class="bento-tag">01</span>
 							<h3 class="bento-title">Diseño web & UX</h3>
-							<p class="bento-desc">Interfaces que convierten. Diseñamos con sistemas, no con píxeles sueltos. Figma, prototipos y handoff impecable.</p>
+							<p class="bento-desc">Interfaces que convierten visitas en clientes. Sistemas de diseño que escalan, no píxeles sueltos que se rompen al primer cambio.</p>
 							<span class="bento-stack">Figma · Design Systems · UX Research</span>
 							<span class="bento-cta" aria-hidden="true">Ver más →</span>
 						</div>
@@ -129,7 +129,7 @@
 						</div>
 						<span class="bento-tag">02</span>
 						<h3 class="bento-title">Integración de IA</h3>
-						<p class="bento-desc">Chatbots, copilots, pipelines de contenido. Llevamos la IA al flujo real de tu negocio.</p>
+						<p class="bento-desc">Chatbots, automatizaciones y pipelines de contenido. IA que trabaja en tu negocio mientras tú haces lo que importa.</p>
 						<span class="bento-stack">OpenAI · Claude · LangChain · n8n</span>
 						<span class="bento-cta" aria-hidden="true">Ver más →</span>
 					</div>
@@ -141,7 +141,7 @@
 					<div class="bento-core">
 						<span class="bento-tag">03</span>
 						<h3 class="bento-title">Desarrollo a medida</h3>
-						<p class="bento-desc">WordPress, Next.js o lo que el proyecto requiera. Código limpio, rápido y escalable.</p>
+						<p class="bento-desc">WordPress, Next.js o lo que necesites. Sin page builders que ralentizan tu web ni código que solo el proveedor puede tocar.</p>
 						<span class="bento-stack">WordPress · Next.js · PHP · React</span>
 						<span class="bento-cta" aria-hidden="true">Ver más →</span>
 						<div class="bento-core__illus bento-core__illus--bottom" aria-hidden="true">
@@ -156,7 +156,7 @@
 					<div class="bento-core">
 						<span class="bento-tag">04</span>
 						<h3 class="bento-title">Estrategia digital</h3>
-						<p class="bento-desc">Auditoría, roadmap y acompañamiento para decidir qué construir y en qué orden.</p>
+						<p class="bento-desc">Auditoría, roadmap y acompañamiento. Para no volver a invertir en digital sin saber si va a funcionar.</p>
 						<span class="bento-stack">Auditoría · Roadmap · Consultoría</span>
 						<span class="bento-cta" aria-hidden="true">Ver más →</span>
 						<div class="bento-core__illus bento-core__illus--bottom" aria-hidden="true">
@@ -171,7 +171,7 @@
 					<div class="bento-core">
 						<span class="bento-tag">05</span>
 						<h3 class="bento-title">Social Media</h3>
-						<p class="bento-desc">Gestión estratégica con IA. Calendarios editoriales y contenido que hace crecer tu comunidad.</p>
+						<p class="bento-desc">Gestión con IA en el proceso. Publicamos, respondemos y optimizamos sin que tengas que mirar el móvil cada hora.</p>
 						<span class="bento-stack">Instagram · LinkedIn · TikTok · IA</span>
 						<span class="bento-cta" aria-hidden="true">Ver más →</span>
 						<div class="bento-core__illus bento-core__illus--bottom" aria-hidden="true">
@@ -291,7 +291,7 @@
 				<h2 class="cta-band__title" id="cta-title">¿Tienes algo en mente pero no sabes por dónde empezar?</h2>
 				<p class="cta-band__sub">Cuéntanos tu proyecto y te respondemos antes de que acabe el día.</p>
 			</div>
-			<a href="#contacto" class="btn btn--white">Empezar ahora →</a>
+			<a href="#contacto" class="btn btn--white">Cuéntanos tu proyecto →</a>
 		</div>
 	</section>
 
