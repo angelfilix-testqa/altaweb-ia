@@ -11,6 +11,10 @@ license.txt
 readme.html
 index.php
 
+# Excepciones — archivos del tema que deben estar en git
+!index.php
+!wp-config.sample.php
+
 # Uploads (imágenes subidas por el usuario — van por FTP/CDN)
 wp-content/uploads/
 
