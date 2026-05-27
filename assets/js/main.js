@@ -108,4 +108,103 @@
     observer.observe(el);
   });
 
+  // ── 02 · Stat counters con IntersectionObserver ─────────────
+  var statNums = document.querySelectorAll('.stat__num[data-count]');
+  if (statNums.length) {
+    var counterObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var target = parseInt(el.dataset.count, 10);
+        var prefix = el.dataset.prefix || '';
+        var suffix = el.dataset.suffix || '';
+        var duration = 1400;
+        var startTime = null;
+        function step(ts) {
+          if (!startTime) startTime = ts;
+          var progress = Math.min((ts - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = prefix + Math.round(eased * target) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        counterObs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    statNums.forEach(function (el) { counterObs.observe(el); });
+  }
+
+  // ── 02 · Terminal typing animation ──────────────────────────
+  var termBody = document.querySelector('.terminal__body');
+  if (termBody) {
+    var lines = [
+      { cls: '',     html: '<span class="t-mute">$</span> <span class="t-cmd">init</span> altaweb.ia' },
+      { cls: '',     html: '<span class="t-mute">→</span> Analizando contexto de marca<span class="t-blink">_</span>' },
+      { cls: 't-ok', html: '✓ Identidad cargada' },
+      { cls: 't-ok', html: '✓ Stack definido' },
+      { cls: 't-ok', html: '✓ IA integrada' },
+      { cls: '',     html: '<span class="t-mute">→</span> Lanzando producto <span class="aw-cursor" aria-hidden="true"></span>' },
+    ];
+    termBody.innerHTML = '';
+    var li = 0;
+    function typeLine() {
+      if (li >= lines.length) return;
+      var p = document.createElement('p');
+      if (lines[li].cls) p.className = lines[li].cls;
+      p.innerHTML = lines[li].html;
+      p.style.opacity = '0';
+      termBody.appendChild(p);
+      setTimeout(function (el) { el.style.transition = 'opacity 0.3s'; el.style.opacity = '1'; }, 30, p);
+      li++;
+      if (li < lines.length) setTimeout(typeLine, 380);
+    }
+    setTimeout(typeLine, 800);
+  }
+
+  // ── 08 · Scroll progress bar ─────────────────────────────────
+  var progressBar = document.getElementById('scroll-progress');
+  if (progressBar) {
+    window.addEventListener('scroll', function () {
+      var total = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
+    }, { passive: true });
+  }
+
+  // ── 08 · Back to top ─────────────────────────────────────────
+  var backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', function () {
+      backToTop.classList.toggle('is-visible', window.scrollY > 400);
+    }, { passive: true });
+    backToTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ── 06 · Form — submit + toast ───────────────────────────────
+  function showToast(msg) {
+    var toast = document.getElementById('site-toast');
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-visible');
+    setTimeout(function () { toast.classList.remove('is-visible'); }, 3500);
+  }
+
+  var contactForm = document.querySelector('.contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = document.getElementById('cf-submit');
+      if (!btn) return;
+      btn.classList.add('is-loading');
+      btn.disabled = true;
+      setTimeout(function () {
+        btn.classList.remove('is-loading');
+        btn.disabled = false;
+        contactForm.reset();
+        showToast('¡Mensaje enviado! Te respondemos hoy mismo.');
+      }, 1800);
+    });
+  }
+
 })();

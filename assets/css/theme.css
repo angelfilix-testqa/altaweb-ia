@@ -2097,3 +2097,390 @@ button { cursor: pointer; }
   .svc-pill__stack { display: none; }
   .svc-hero__ctas { flex-direction: column; align-items: flex-start; }
 }
+
+/* ============================================================
+   UI ENHANCEMENTS — bloques 02–08
+   ============================================================ */
+
+/* ── 02 · Hero — pulse ring + stat counters ──────────────── */
+.btn--primary { position: relative; overflow: visible; }
+
+.btn-pulse {
+  position: absolute;
+  inset: -3px;
+  border-radius: 999px;
+  border: 2px solid var(--aw-violet-500);
+  opacity: 0;
+  pointer-events: none;
+  animation: pulse-ring 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse-ring {
+  0%   { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 0;   transform: scale(1.2); }
+}
+
+/* ── 03 · Services — spark dots + bento pills + glow hover ── */
+.spark-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #D946EF;
+  margin-right: 6px;
+  vertical-align: middle;
+  flex-shrink: 0;
+  animation: spark-pulse 2s ease-in-out infinite;
+}
+@keyframes spark-pulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.4); }
+}
+
+.bento-tag {
+  display: flex;
+  align-items: center;
+}
+
+.bento-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: var(--aw-space-3);
+}
+
+.bento-pill {
+  font-family: var(--aw-font-mono);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--aw-violet-500) 12%, transparent);
+  color: var(--aw-violet-300, #C4B5FD);
+  border: 1px solid color-mix(in oklch, var(--aw-violet-500) 22%, transparent);
+}
+
+.bento-shell:hover {
+  box-shadow:
+    0 0 0 1px color-mix(in oklch, var(--aw-violet-500) 35%, transparent),
+    0 8px 32px -4px color-mix(in oklch, var(--aw-violet-500) 18%, transparent);
+}
+
+/* ── 04 · Portfolio — gradient thumbs ───────────────────────── */
+.work-card__thumb--gradient {
+  background: linear-gradient(135deg, var(--g-from, #4C1D95), var(--g-to, #7C3AED));
+  aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card__illus {
+  width: 90px;
+  height: 90px;
+  opacity: 0.75;
+}
+
+/* ── 05 · CTA — background animado + orbes + dual CTA ───────── */
+.cta-band { position: relative; overflow: hidden; }
+
+.cta-band__canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cta-band__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-shift 12s linear infinite;
+}
+@keyframes grid-shift {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(40px, 40px); }
+}
+
+.cta-band__orb {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  filter: blur(70px);
+  animation: orb-drift 8s ease-in-out infinite;
+}
+.cta-band__orb--1 {
+  top: -80px;
+  right: -60px;
+  background: #D946EF;
+  opacity: 0.15;
+}
+.cta-band__orb--2 {
+  bottom: -100px;
+  left: -40px;
+  background: #22D3EE;
+  opacity: 0.1;
+  animation-delay: -4s;
+}
+@keyframes orb-drift {
+  0%, 100% { transform: translate(0, 0); }
+  25%       { transform: translate(20px, -20px); }
+  50%       { transform: translate(-10px, 10px); }
+  75%       { transform: translate(15px, 15px); }
+}
+
+.cta-band__inner { position: relative; z-index: 1; }
+
+.cta-band__actions {
+  display: flex;
+  gap: var(--aw-space-4);
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.btn--ghost-white {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  border-radius: var(--aw-radius-full);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.8);
+  font-family: var(--aw-font-display);
+  font-size: var(--aw-text-sm);
+  font-weight: var(--aw-weight-medium);
+  text-decoration: none;
+  transition: border-color 0.25s var(--aw-ease), background 0.25s var(--aw-ease), color 0.25s var(--aw-ease);
+}
+.btn--ghost-white:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.06);
+}
+
+/* ── 06 · Form — floating labels + spinner + toast ──────────── */
+.form-field {
+  position: relative;
+  margin-bottom: var(--aw-space-4);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 26px 16px 10px;
+  background: color-mix(in oklch, var(--aw-paper-50) 4%, transparent);
+  border: 1px solid color-mix(in oklch, var(--aw-paper-50) 12%, transparent);
+  border-radius: var(--aw-radius-lg);
+  color: var(--aw-fg-on-dark);
+  font-family: var(--aw-font-display);
+  font-size: var(--aw-text-base);
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--aw-violet-500);
+}
+
+.form-field label {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  font-size: var(--aw-text-sm);
+  color: color-mix(in oklch, var(--aw-paper-50) 45%, transparent);
+  pointer-events: none;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+.form-field input:focus ~ label,
+.form-field input:not(:placeholder-shown) ~ label,
+.form-field textarea:focus ~ label,
+.form-field textarea:not(:placeholder-shown) ~ label {
+  top: 8px;
+  font-size: 10px;
+  color: var(--aw-violet-400);
+  letter-spacing: 0.04em;
+}
+
+/* Loading state del botón */
+.btn-spinner {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+#cf-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--aw-space-2);
+  transition: opacity 0.2s ease;
+}
+#cf-submit.is-loading .btn-label { opacity: 0.6; }
+#cf-submit.is-loading .btn-spinner { display: block; }
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 96px;
+  left: 50%;
+  transform: translateX(-50%) translateY(16px);
+  background: var(--aw-violet-500);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--aw-font-mono);
+  font-size: var(--aw-text-sm);
+  z-index: 10002;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+.toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ── 07 · Footer — 4 columnas + newsletter + social ─────────── */
+.site-footer__inner {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.site-footer__nav-title {
+  font-family: var(--aw-font-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--aw-paper-50) 40%, transparent);
+  margin-bottom: var(--aw-space-4);
+}
+
+.footer-newsletter {
+  display: flex;
+  gap: 0;
+  margin-top: var(--aw-space-4);
+  border-radius: var(--aw-radius-full);
+  overflow: hidden;
+  border: 1px solid color-mix(in oklch, var(--aw-paper-50) 12%, transparent);
+}
+
+.footer-newsletter input {
+  flex: 1;
+  padding: 10px 16px;
+  background: color-mix(in oklch, var(--aw-paper-50) 4%, transparent);
+  border: none;
+  color: var(--aw-fg-on-dark);
+  font-family: var(--aw-font-display);
+  font-size: var(--aw-text-sm);
+  min-width: 0;
+}
+.footer-newsletter input::placeholder { color: color-mix(in oklch, var(--aw-paper-50) 30%, transparent); }
+.footer-newsletter input:focus { outline: none; }
+
+.footer-newsletter button {
+  padding: 10px 16px;
+  background: var(--aw-violet-500);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: var(--aw-text-base);
+  transition: background 0.2s ease;
+}
+.footer-newsletter button:hover { background: var(--aw-violet-600, #6D28D9); }
+
+.footer-social {
+  display: flex;
+  gap: var(--aw-space-3);
+  margin-top: var(--aw-space-4);
+}
+
+.footer-social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid color-mix(in oklch, var(--aw-paper-50) 12%, transparent);
+  color: color-mix(in oklch, var(--aw-paper-50) 55%, transparent);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+.footer-social__link:hover {
+  border-color: var(--aw-violet-400);
+  color: var(--aw-violet-400);
+  background: color-mix(in oklch, var(--aw-violet-500) 8%, transparent);
+}
+
+.site-footer__contact-link a {
+  font-family: var(--aw-font-mono);
+  font-size: var(--aw-text-sm);
+  color: color-mix(in oklch, var(--aw-fg-on-dark) 55%, transparent);
+  transition: color var(--aw-duration) var(--aw-ease);
+}
+.site-footer__contact-link a:hover { color: var(--aw-violet-400); }
+
+/* ── 08 · Global — back to top + progress bar + transitions ─── */
+@view-transition { navigation: auto; }
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--aw-violet-500), #D946EF);
+  z-index: 10001;
+  pointer-events: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--aw-violet-500);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s ease, visibility 0s 0.3s, transform 0.3s ease, background 0.2s ease;
+  box-shadow: 0 4px 16px color-mix(in oklch, var(--aw-violet-500) 40%, transparent);
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, visibility 0s, transform 0.3s ease, background 0.2s ease;
+}
+.back-to-top:hover {
+  background: var(--aw-violet-600, #6D28D9);
+  transform: translateY(-2px);
+}
+
+/* ── Responsive 02–08 ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .cta-band__actions { justify-content: center; }
+  .site-footer__inner { grid-template-columns: 1fr; }
+  .back-to-top { bottom: 20px; right: 20px; }
+  .toast { white-space: normal; text-align: center; width: calc(100% - 32px); }
+}
